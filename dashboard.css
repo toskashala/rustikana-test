@@ -1,0 +1,281 @@
+body{
+    background-image: url(img/header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+
+.logo img{
+    width: 100px;
+}
+
+h1{
+    margin-top: 20px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #F5F5F5;
+}
+
+.card {
+    background-color: #f8f9fa;
+    color: #333333;
+    height: fit-content;
+}
+
+.card-header {
+    background-color: #ffffff;
+    border-bottom: 2px solid #da3c3c;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #333333;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+.badge-danger {
+    background-color: #da3c3c;
+}
+
+.btn-danger {
+    background-color: #da3c3c;
+    border-color: #da3c3c;
+    float: top;
+}
+
+.btn-danger:hover {
+    background-color: #c13535;
+    border-color: #c13535;
+}
+.card.bg-success {
+    background-color: #28a745;
+}
+
+.card.bg-warning {
+    background-color: #ffc107;
+}
+
+.card.bg-secondary {
+    background-color: #6c757d;
+}
+
+.card .badge {
+    font-size: 1rem;
+    margin-left: 5px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+.update-status-btn {
+    margin-left: 10px;
+}
+
+.order-item-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.table-number-button {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.table-number-button:hover{
+    box-shadow: 0 20px 40px #333333;
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+.table-number-button:active{
+    transform: translateY(1px);
+}
+.position-absolute {
+    position: absolute;
+}
+
+.top-right {
+    top: 0px;
+    right: 0px;
+}
+
+#logout-btn{
+    background-color: #DA3C3C;
+    color: #F5F5F5;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-radius: 0;
+    padding: 10px 15px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease background-color;
+}
+
+#logout-btn:hover{
+    cursor: pointer;
+    transform: translateY(1px);
+    background-color: #bf2f2f;
+}
+
+#logout-btn:active{
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+body {
+    background-image: url(img/header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+
+.logo img {
+    width: 100px;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #F5F5F5;
+}
+
+.card {
+    background-color: #f8f9fa;
+    color: #333333;
+    height: fit-content;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-header {
+    border-bottom: 2px solid #da3c3c;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-body h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.card-body p {
+    margin: 0.5rem 0;
+}
+
+.badge {
+    font-size: 1rem;
+    margin-left: 5px;
+}
+
+.btn-success, .btn-warning {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+
+.top-right {
+    top: 10px;
+    right: 10px;
+}
+
+.table-number-button {
+    background-color: white;
+    color: black !important;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.table-number-button:hover {
+    box-shadow: 0 20px 40px #333333;
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+.table-number-button:active {
+    transform: translateY(1px);
+}
+
+/* Specific styles for the order status headers */
+.card-header.bg-success {
+    background-color: #28a745 !important;
+}
+
+.card-header.bg-warning {
+    background-color: #ffc107 !important;
+}
+
+.card-header.bg-secondary {
+    background-color: #6c757d !important;
+}
+
+.order-item-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.card.bg-success {
+    background-color: #28a745;
+}
+
+.card.bg-warning {
+    background-color: #ffc107;
+}
+
+.card.bg-secondary {
+    background-color: #6c757d;
+}
+
+.card.bg-secondary .card-body {
+    background-color: #f8f9fa; /* Keeping the card body color consistent */
+}

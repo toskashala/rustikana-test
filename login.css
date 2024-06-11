@@ -1,0 +1,187 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body, html {
+    background-image: url(img/header.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-fluid {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.inner-div {
+    display: block; /* Ensures each inner div behaves as a block element */
+    margin-bottom: 30px; /* Adds space between each block */
+}
+
+#inner-1{
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #F5F5F5;
+    margin-bottom: -10px;
+    text-transform: uppercase;
+}
+
+
+#inner-2{
+    font-weight: 600;
+    font-family: "Sansita Swashed", system-ui;
+    font-size: 60px;
+    color: #DA3C3C;
+    text-shadow: 4px 20px 20px rgba(0, 0, 0, 0.61);
+}
+
+.login-container {
+    height: 500px;
+    width: 1000px;
+    display: flex;
+    border-radius: 79px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #F5F5F5;
+    flex-direction: row-reverse; 
+}
+
+.bg-image {
+    flex: 1;
+    background-image: url(img/Logo-Rustikana-600px.png); /* Add your image URL here */
+    background-size: 70%;
+    background-color: #DA3C3C;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.form-container {
+    flex: 1;
+    background-color: #fffaf0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-group label {
+    color: #8b4513;
+}
+
+.form-group {
+    width: fit-content;
+    position: relative; /* Ensure relative positioning for absolute positioning of the icon */
+}
+
+.form-control {
+    border-radius: 90px !important;
+    border: 1px solid #333333 !important;
+    height: 50px;
+    width: 300px !important;
+    background: none !important;
+    padding-right: 40px; /* Add padding to the right for the icon */
+}
+#login-title{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    letter-spacing: 0.2em;
+}
+.custom-btn {
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+    border: 1px solid #000000; /* Black border */
+    border-radius: 0 !important; /* Remove rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Black box shadow */
+    padding: 10px 20px; /* Padding inside the button */
+    width: 100%;
+    margin-top: 30px;
+    text-align: center; /* Center text */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+
+
+.custom-btn:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+}
+
+input::placeholder {
+    opacity: 0.5 !important;
+    font-weight: 200 !important; /* Adjust the opacity value (0 to 1) */
+}
+
+.form-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Ensures the icon does not interfere with input interaction */
+}
+
+.form-icon img{
+    width: 35px;
+}
+
+#username {
+    margin-bottom: 20px;
+}
+@media (max-width: 1100px) {
+   .container-fluid{
+    transform: scale(0.7);
+   }
+}
+
+@media (max-width: 767.98px) {
+    .login-container {
+        flex-direction: column;
+        width: 100%;
+        padding: 50px;
+        height: auto;
+    }
+
+    .bg-image {
+        display: none;
+    }
+
+    .form-container {
+        padding: 20px;
+        margin: 20px;
+        width: 100%;
+    }
+}
+@media (max-width: 700px) {
+
+    .container-fluid{
+        width: 100%;
+        margin: 0 !important;
+        transform: scale(1);
+    }
+
+    .inner-div{
+        transform: scale(0.7);
+        width: 100%;
+    }
+
+    #inner-2{
+        font-size: 45px;
+    }
+}
+
+

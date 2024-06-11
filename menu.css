@@ -1,0 +1,536 @@
+#header {
+  margin-top: 50px;
+  background-color: #a6a6a622;
+  width: fit-content;
+  margin: 50px 150px;
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.whole-container {
+  background-image: url(img/gallery1.jpg);
+}
+
+.slider-wrapper {
+  width: 60%; /* Adjust based on the number of visible items */
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.2s ease;
+}
+
+.slider-item {
+  min-width: 100px;
+  margin: 0 10px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-color: #a6a6a63e;
+  margin: 0 auto 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 7px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.icon-circle:hover {
+  background-color: #a6a6a698;
+}
+
+.icon-circle:active {
+  background-color: #a6a6a6d9;
+  transform: scale(0.9);
+}
+
+.img-icon {
+  width: 35px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  width: 5%;
+  background: none;
+  border: none;
+}
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: #a6a6a626;
+  color: #DA3C3C;
+  font-weight: 600;
+  font-size: 14px;
+  padding-top: 20px;
+}
+
+.carousel-control-next {
+  margin-right: 100px;
+}
+
+.carousel-control-prev {
+  margin-left: 100px;
+}
+
+.card-outside {
+  width: 300px;
+  height: fit-content;
+  background-color: #DA3C3C;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: block;
+  padding: 20px 20px;
+  margin-bottom: -10px;
+  transform: scale(0.8);
+}
+
+.section-1 {
+  width: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 220px !important;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.card-body {
+  width: 250px;
+  background-color: #f5f5f5;
+  height: 220px;
+  margin: auto;
+  padding: 0px 10px;
+}
+
+.card-title {
+  font-weight: 600;
+  padding: 15px 0px;
+  font-size: 24px;
+  color: #333333;
+}
+
+.card-text {
+  font-weight: 200;
+  color: #333333;
+}
+
+.card-outside button {
+  border-radius: 0;
+  font-weight: 300;
+  width: 150px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+#price-button {
+  background-color: #DA3C3C;
+  color: #F5F5F5;
+  margin-left: 10px;
+}
+
+#add {
+  margin-right: 10px;
+}
+
+#add:hover {
+  background-color: #da3c3c68;
+  color: #DA3C3C;
+}
+
+.container {
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.background-menu {
+  width: 100%;
+  background-image: url(img/header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.modal-content {
+  border-radius: 0;
+  border: none;
+  padding: 30px 50px;
+}
+
+.modal-body {
+  font-size: 0.9rem;
+  color: #333; /* Darker text color */
+}
+
+.modal-body h5 {
+  color: #333; /* Darker text color */
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.modal-body button,
+.modal-body a {
+  width: 120px; /* Same width for both buttons */
+  border-radius: 0; /* No border radius */
+  color: #333; /* Darker text color */
+  margin-top: 20px !important;
+  border-color: #4CAF50;
+}
+
+.modal-body button.btn-outline-success {
+  border-color: #4CAF50;
+  color: #4CAF50; /* Darker border for outline button */
+}
+
+.modal-body button.btn-outline-success:hover {
+  background-color: #4CAF50;
+  color: #f5f5f5; /* Darker background on hover */
+}
+
+.modal-body a.btn-success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.modal-body a.btn-success:hover {
+  background-color: #218838;
+}
+
+.modal-dialog-centered {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.modal-dialog-centered::before {
+  display: block;
+  height: calc(100vh - 1rem);
+  content: "";
+}
+
+/* Ensure the container takes full width */
+.table {
+  width: 100%;
+}
+
+/* Center-align the text */
+.table th,
+.table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Style the item box */
+.cart-item-box {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.item-img img {
+  max-width: 100px;
+  border-radius: 5px;
+}
+
+.item-details {
+  max-width: 200px;
+}
+
+.item-details p {
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+/* Flex layout for price, quantity, total, and remove */
+.price-total-remove {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.price-total-remove div {
+  margin: 5px 0;
+}
+
+/* Remove button style */
+.remove-icon {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+/* Style adjustments for quantity container and buttons */
+.quantity-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity-container input {
+  width: 50px;
+  text-align: center;
+}
+
+.quantity-container button {
+  margin: 0 5px;
+}
+
+/* Style the table row */
+.table-row {
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.col-sm-12.col-md-3 {
+  padding: 5px; /* Adjust the padding as needed */
+}
+
+.card-outside {
+  opacity: 0; /* Start hidden */
+  animation: fadeInUp 0.5s ease-in-out forwards;
+}
+
+/* Optional: Add hover effect for better user experience */
+.card-outside:hover {
+  background-color: #9a2a2a;
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+      transform: translateX(0);
+      opacity: 1;
+  }
+  to {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+}
+
+.promo-banner {
+  display: none; /* Initially hidden */
+  width: fit-content;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  color: #f5f5f5;
+  padding: 30px;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  transform: translateX(100%); /* Start off-screen */
+  opacity: 0; /* Start with zero opacity */
+  transition: transform 2s ease-in-out, opacity 2s ease-in-out; /* Define transition */
+  border-left: 10px solid #DA3C3C !important;
+  border-right: 10px solid #DA3C3C !important;
+}
+
+.promo-banner.show {
+  display: flex;
+  animation: slideInRight 0.5s forwards;
+}
+
+.promo-banner.hide {
+  animation: slideOutRight 0.5s forwards;
+}
+
+.promo-banner-content {
+  max-width: 50%;
+}
+
+.promo-banner h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', cursive;
+  font-weight: 700;
+  border-left: 10px solid #DA3C3C !important;
+  padding-left: 10px;
+  border-left: 10px solid #DA3C3C;
+  padding: 10px;
+}
+
+.promo-banner p {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.promo-image-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promo-price {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #DA3C3C;
+  color: white;
+  padding: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.promo-image-container img {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+  .promo-banner-content {
+      max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .promo-banner {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+  .promo-image-container img {
+      max-width: 100%;
+  }
+  .promo-price {
+      position: static;
+      margin-bottom: 10px;
+  }
+  #header{
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+    margin-top: 100px;
+  }
+
+.slider-wrapper {
+  width: 70%; /* Adjust based on the number of visible items */
+}
+.carousel-control-next {
+  margin-right: 30px;
+}
+
+.carousel-control-prev {
+  margin-left: 30px;
+}
+
+}
+
+/* Flex container for cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Grid container for cards */
+#card-container {
+  display: grid;
+  gap: 10px; /* Reduced space between grid items */
+  justify-content: center;
+}
+
+/* Card styling */
+.card-outside {
+  background-color: #DA3C3C;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+  margin-bottom: 20px;
+  transform: scale(0.9);
+}
+
+.section-1 {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 220px !important;
+  margin-bottom: 10px;
+}
+
+/* Grid settings for different screen sizes */
+@media (min-width: 1300px) {
+  #card-container {
+    grid-template-columns: repeat(4, 1fr); /* 4 cards per row on large screens */
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1299.98px) {
+  #card-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row on medium screens */
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  #card-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on small screens */
+  }
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #DA3C3C; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
