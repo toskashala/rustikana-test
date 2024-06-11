@@ -5,12 +5,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (cart.length === 0) {
             cartContainer.innerHTML = '<p class="empty">Your cart is empty</p>';
+            resetTotalAmount(); // Reset total amount when cart is empty
             return;
         }
 
         cartContainer.innerHTML = `
             <table class="table">
-                <thead class = "table-column">
+                <thead class="table-column">
                     <tr>
                         <th scope="col">Item</th>
                         <th scope="col" class="text-center price-column">Price</th>
@@ -60,6 +61,10 @@ document.addEventListener('DOMContentLoaded', function() {
         updateTotalAmount();
     }
 
+    function resetTotalAmount() {
+        document.getElementById('total-amount').textContent = 0;
+    }
+
     window.updateQuantity = function(itemId, change) {
         let cart = JSON.parse(localStorage.getItem('cart')) || [];
         const itemIndex = cart.findIndex(cartItem => cartItem.id === itemId);
@@ -79,6 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
         cart = cart.filter(cartItem => cartItem.id !== itemId);
         localStorage.setItem('cart', JSON.stringify(cart));
         displayCartItems();
+        updateTotalAmount(); // Update total amount after removing item
     };
 
     function updateTotalAmount() {
@@ -87,25 +93,21 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('total-amount').textContent = totalAmount;
     }
 
-    // Function to show the order success modal
     function showOrderSuccessModal() {
         const orderSuccessModal = new bootstrap.Modal(document.getElementById('orderSuccessModal'));
         orderSuccessModal.show();
     }
 
-    // Function to show the empty cart modal
     function showEmptyCartModal() {
         const emptyCartModal = new bootstrap.Modal(document.getElementById('emptyCartModal'));
         emptyCartModal.show();
     }
 
-    // Function to show the invalid table number modal
     function showInvalidTableNumberModal() {
         const invalidTableNumberModal = new bootstrap.Modal(document.getElementById('invalidTableNumberModal'));
         invalidTableNumberModal.show();
     }
 
-    // Function to show the empty table number modal
     function showEmptyTableNumberModal() {
         const emptyTableNumberModal = new bootstrap.Modal(document.getElementById('emptyTableNumberModal'));
         emptyTableNumberModal.show();
@@ -148,6 +150,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     showOrderSuccessModal();
                     localStorage.removeItem('cart');
                     displayCartItems();
+                    resetTotalAmount(); // Reset total amount after sending order
                     document.getElementById('comments').value = '';
                     document.getElementById('tableNumber').value = '';
                 } else {
@@ -160,7 +163,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Display cart items if on cart.html
     if (window.location.pathname.includes('cart.html')) {
         displayCartItems();
     }

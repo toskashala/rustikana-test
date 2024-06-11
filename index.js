@@ -293,6 +293,8 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+   
+    
 
     function filterMenuItems(menuItems, category) {
         const promoBanner = document.getElementById('promo-banner');
