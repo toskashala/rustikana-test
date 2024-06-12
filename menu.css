@@ -510,11 +510,27 @@ html {
   }
 }
 
-@media (min-width: 576px) and (max-width: 991.98px) {
+@media (min-width: 576px) {
   #card-container {
     grid-template-columns: repeat(2, 1fr); /* 2 cards per row on small screens */
   }
 }
+@media (max-width: 575.98px) {
+  #card-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on extra small screens */
+    padding-bottom: 40px;
+    width: fit-content;
+  }
+  .card-container{
+    margin: auto;
+  }
+  .card-outside{
+    transform: scale(0.65);
+    margin: -50px;
+    margin-bottom: -100px;
+  }
+}
+
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
